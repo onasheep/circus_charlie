@@ -4,15 +4,32 @@ using UnityEngine;
 
 public class ScrollingObject : MonoBehaviour
 {
-    private float speed = 2f;
     // Start is called before the first frame update
 
     // Update is called once per frame
     void Update()
     {
-        if (GameManager.instance.isGameOver == false)
+        if (GameManager.instance.isGameOver == true || GameManager.instance.isWinStage == true) { return; }
+
+
+        if (GameManager.instance.isJump == false)
         {
-            transform.Translate(Vector3.left * /*GameManager.instance.scrollSpeed*/ speed * GameManager.instance.axisX * Time.deltaTime);
+            Scroll();
         }
+        else
+        {
+            transform.Translate(Vector3.left * GameManager.instance.ScrollSpeed * GameManager.instance.axisX * Time.deltaTime);
+        }
+
+
+
+
+    }
+
+    private void Scroll()
+    {
+
+        transform.Translate(Vector3.left * GameManager.instance.ScrollSpeed * GameManager.instance.axisX * Time.deltaTime);
+
     }
 }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-
+using TMPro;
 
 public static partial class GFunc
 {
@@ -41,6 +41,15 @@ public static partial class GFunc
 
         textComponent.text = text;
     }
+
+    public static void SetTMPText(this GameObject target, string text)
+    {
+        TMP_Text textComponent = target.GetComponent<TMP_Text>();
+        if(textComponent == null || textComponent == default) { return; }
+
+        textComponent.text = text;
+    }
+
 
     //! LoadScene 함수 래핑
     public static void LoadScene(string sceneName)

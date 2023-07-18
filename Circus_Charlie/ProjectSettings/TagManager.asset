@@ -5,6 +5,8 @@ TagManager:
   serializedVersion: 2
   tags:
   - Ground
+  - Remover
+  - Obstacle
   layers:
   - Default
   - TransparentFX
@@ -53,4 +55,7 @@ TagManager:
     locked: 0
   - name: ObstacleClose
     uniqueID: 3369900917
+    locked: 0
+  - name: Ui
+    uniqueID: 939174049
     locked: 0

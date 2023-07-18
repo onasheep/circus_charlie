@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/01. circus_charlie/Scene/PlayScene.unity
+    path: Assets/01. circus_charlie/Scene/TitleScene.unity
+    guid: 671ab27d9a54667489afd0ffca89a149
+  - enabled: 1
+    path: Assets/01. circus_charlie/Scene/Stage1.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects: {}
